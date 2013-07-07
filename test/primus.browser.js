@@ -1,9 +1,9 @@
+/*globals chai */
 describe('primus.js', function () {
   'use strict';
 
-  var Primus = require('./fixture/primus.websocket')
-    , assert = require('assert')
-    , primus = new Primus('/');
+  var primus = new Primus('/')
+    , expect = chai.expect;
 
   //
   // Simple type helper.

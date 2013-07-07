@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Primus -- Mocha Tests</title>
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+</head>
+<body>
+  <div id="mocha"></div>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script src="../node_modules/expect.js/expect.js"></script>
+  <script>mocha.setup('bdd')</script>
+
+  <!-- Include all tests (and dependencies for them) -->
+  <script src="test/nodejitsu/primus.websocket.js"></script>
+  <script src="primus.browser.js"></script>
+
+  <!-- Include the mocha-sauce client -->
+  <script src="../node_modules/mocha-sauce/client.js"></script>
+  <script> mochaSaucePlease(); </script>
+</div>
+</body>
+</html>
